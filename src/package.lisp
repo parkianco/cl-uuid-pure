@@ -8,7 +8,11 @@
   (:use #:cl)
   (:nicknames #:uuid-pure)
   (:export
-   #:with-uuid-pure-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-uuid-pure-timing
    #:uuid-pure-batch-process
    #:uuid-pure-health-check;; UUID type
    #:uuid
