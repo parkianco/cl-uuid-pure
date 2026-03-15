@@ -12,7 +12,10 @@
   :serial t
   :components ((:file "package")
                (:module "src"
-                :components ((:file "uuid")))))
+                :components ((:file "package")
+                             (:file "conditions" :depends-on ("package"))
+                             (:file "types" :depends-on ("package"))
+                             (:file "cl-uuid-pure" :depends-on ("package" "conditions" "types")))))))
 
 (asdf:defsystem #:cl-uuid-pure/test
   :description "Tests for cl-uuid-pure"
