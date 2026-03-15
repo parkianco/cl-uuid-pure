@@ -8,7 +8,9 @@
   (:use #:cl)
   (:nicknames #:uuid-pure)
   (:export
-   ;; UUID type
+   #:with-uuid-pure-timing
+   #:uuid-pure-batch-process
+   #:uuid-pure-health-check;; UUID type
    #:uuid
    #:uuid-p
    ;; Generation
